@@ -206,32 +206,26 @@ As explained before, we'll need some extra fields to get this working.
 
 Let's see one of our cards:
 
-</p>
 <table>
     <tbody>
         <tr><td><b>card_id</b></td><td>00002</td></tr>
         <tr><td><b>options</b></td><td>3</td></tr>
         <tr><td><b>question</b></td><td>What are you seeing from the ISS?</td></tr>
-
         <tr><td><b>media1</b></td><td>[audio:00002-1.webm]</td></tr>
         <tr><td><b>media1fn</b></td><td>00002-1.webm</td></tr>
         <tr><td><b>answer1</b></td><td>Aurora Borealis</td></tr>
-
         <tr><td><b>media2</b></td><td>[audio:00002-2.webm]</td></tr>
         <tr><td><b>media2fn</b></td><td>00002-2.webm</td></tr>
         <tr><td><b>answer2</b></td><td>Sunrise</td></tr>
-
         <tr><td><b>media3</b></td><td>[audio:00002-3.webm]</td></tr>
         <tr><td><b>media3fn</b></td><td>00002-3.webm</td></tr>
         <tr><td><b>answer3</b></td><td>Low-pressure area</td></tr>
-
         <tr><td><b>copyright</b></td><td>
           Video: ESA – European Space Agency 2017, CC BY-SA 3.0 IGO</br>
           Audio: “Anaxagoras” by Peter Kirn/Establishment Records, CC BY-SA 3.0
         </td></tr>
     </tbody>
 </table>
-<p>
 
 I recommend always having a sort of `card_id`, unique for each card, preferably
 numerical and sequential. But it's not really required for this software to
