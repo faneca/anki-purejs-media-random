@@ -53,14 +53,17 @@ features I wanted, embedding an HTML + javascript-powered player was the best
 and most portable approach:
 
   - Desktop
+
    ![Embedded player on the Desktop client](./snapshots/player-desktop.png)
    ![Embedded player on the Desktop client](./snapshots/player-desktop-editor.png)
    ![Embedded player on the Desktop client](./snapshots/player-desktop-preview.png)
 
   - Ankidroid
+
    ![Embedded player on Ankidroid](./snapshots/player-ankidroid.gif)
 
   - Ankiweb
+
    ![Embedded player on Ankiweb](./snapshots/player-ankiweb-firefox.gif)
 
 We can see how it's possible to:
@@ -203,6 +206,7 @@ As explained before, we'll need some extra fields to get this working.
 
 Let's see one of our cards:
 
+</p>
 <table>
     <tbody>
         <tr><td><b>card_id</b></td><td>00002</td></tr>
@@ -222,10 +226,12 @@ Let's see one of our cards:
         <tr><td><b>answer3</b></td><td>Low-pressure area</td></tr>
 
         <tr><td><b>copyright</b></td><td>
-Video: ESA – European Space Agency 2017, CC BY-SA 3.0 IGO
-Audio: “Anaxagoras” by Peter Kirn/Establishment Records, CC BY-SA 3.0</td></tr>
+          Video: ESA – European Space Agency 2017, CC BY-SA 3.0 IGO</br>
+          Audio: “Anaxagoras” by Peter Kirn/Establishment Records, CC BY-SA 3.0
+        </td></tr>
     </tbody>
 </table>
+<p>
 
 I recommend always having a sort of `card_id`, unique for each card, preferably
 numerical and sequential. But it's not really required for this software to
