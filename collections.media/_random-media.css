@@ -1,0 +1,77 @@
+[class|="random-media-hidden"] {
+  display: none;
+}
+[class|="random-media-hidden"].shownforced {
+ display: initial;
+}
+
+#random-media {
+  margin: 16px 0;
+}
+.random-media-container {
+  background: no-repeat url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" version="1"><path fill="none" opacity="0.4" stroke="LightSlateGray" stroke-linecap="round" stroke-miterlimit="10" d="M9 97v2m3-2v2m3-22v42m3-53v65m3-107v149m3-133v118m3-65v10m3-49v87m3-123v158m3-120v81m3-64v46m3-79v116m3-142v169m3-110v52m3-40v28m3-58v87m3-121v154m3-156v158m3-127v96m3-81v67m3-98v130m3-95v61m3-43v26m3-30v34m3-89v144m3-144v138m3-86v34m3-26v18m3-10v2m3-22v42m3-104v165m3-104v42m3-81v120m3-146v173m3-164v154m3-106v57m3-109v163m3-111v61m3-52v42m3-59v75m3-106v136m3-145v155m3-108v63m3-103v142m3-147v152m3-109v65m3-46v28m3-25v23m3-70v118m3-136v154m3-121v87m3-55v22m3-33v44m3-86v129m3-138v149m3-148v146m3-96v46m3-78v110m3-85v61m3-70v79m3-123v167m3-162v156m3-117v77m3-67v57m3-96v136m3-87v38m3-52v65m3-116v167m3-154v142m3-87v32m3-55v79m3-115v150m3-133v116m3-86v57m3-106v156m3-122v85m3-59v32m3-62v91m3-121v150m3-142v134m3-106v77m3-123v169m3-139v114m3-79v44m3-79v114m3-131v149m3-156v163m3-107v50m3-63v75m3-88v102m3-72v42m3-88v134m3-144v154m3-141v128m3-91v55m3-52v49m3-82v115m3-116v116m3-70v24m3-22v20m3-15v10m3-9v8m3-7v6" paint-order="fill stroke markers"/></svg>');
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  height: 200px;
+}
+video[class|="random-media"],
+#random-media-play-controls {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+#random-media-play-controls {
+  background-color: rgba(168, 168, 168, 0.2);
+}
+#random-media-play:before {
+  content: "\25b6  1x";
+  left: -0.5em;
+  top: 20px;
+  position: relative;
+}
+#random-media-play-slow:before {
+  content: "\25b6  " attr(data-playrate) "x";
+  top: 20px;
+  position: relative;
+}
+#random-media-play,
+#random-media-play-slow {
+  margin: 20px auto 0;
+  height: 70px;
+  width: 200px;
+  border-radius: 10px;
+}
+#random-media-play,
+#random-media-play-slow,
+.random-media-checkboxdiv {
+  background-color: lightblue;
+  border: 2px outset;
+}
+#random-media-play:hover,
+#random-media-play-slow:hover,
+.random-media-checkboxdiv:hover {
+  background-color: #0275d8;
+  border-style: inset;
+  color: #fff;
+}
+.random-media-checkboxdiv input + span:before {
+  content: "\21bb";
+  color: #000;
+}
+.random-media-checkboxdiv input:checked + span:before {
+  color: #fff;
+}
+
+#random-media-warning {
+  color: red;
+  font-size: medium;
+  position: fixed;
+  top: 0;
+  right: 50%;
+  margin-right: -50%;
+  width: 100%;
+}
